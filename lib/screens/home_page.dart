@@ -20,6 +20,7 @@ class _home_pageState extends State<home_page> {
       isDesktop = true;
     }
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 1, 1, 52),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -28,75 +29,94 @@ class _home_pageState extends State<home_page> {
               elevation: 10,
               child: Padding(
                 padding: EdgeInsets.only(
-                    left: 150.0, top: 15, right: 50, bottom: 15),
+                    left: 2, top: 0, right: 2, bottom: 0),
+                    
                 child: HeaderWidget(),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 150.0, top: 0, right: 150),
+              padding: const EdgeInsets.only(left: 50, top: 0, right: 50, bottom: 0 ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   const LeftDescription(),
                   Center(
                     child: Container(
-                      width: 600,
-                      height: 804,
-                      child: SvgPicture.asset(
-                        'assets/background_svg.svg',
-                        height: 20.0,
-                        width: 20.0,
-                        allowDrawingOutsideViewBox: true,
+                      width: 800,
+                      height: 800,
+                      decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(0.6 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
+  ),         child: ClipRRect(
+                        borderRadius: BorderRadius.circular(0.3 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
+    child: Image.network(
+      'icons/land3-bg.png',
+      // height: 50.0,icons/land3.jpeg
+      // width: 50.0,
+      
+                        
                       ),
                     ),
+                  )
                   )
                 ],
               ),
             ),
+
+
+            
             const SizedBox(
-              height: 100,
+              
+              height: 150,
+              
             ),
-            Row(
+            Padding(
+  padding: const EdgeInsets.only(bottom: 100),
+         child:  Row(
+              
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomAnimatedContainer('Contract Owner', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "owner",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "owner",
-                  );
-                }),
-                CustomAnimatedContainer('Land Inspector', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "LandInspector",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "LandInspector",
-                  );
-                }),
-                CustomAnimatedContainer('User', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "UserLogin",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "UserLogin",
-                  );
-                }),
+                
+                
+                
+                // CustomAnimatedContainer('Contract Owner', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "owner",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "owner",
+                //   );
+                // }),
+                // CustomAnimatedContainer('Land Inspector', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "LandInspector",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "LandInspector",
+                //   );
+                // }),
+                // CustomAnimatedContainer('User', () {
+                //   // Navigator.push(
+                //   //     context,
+                //   //     MaterialPageRoute(
+                //   //         builder: (context) => const CheckPrivateKey(
+                //   //               val: "UserLogin",
+                //   //             )));
+                //   Navigator.of(context).pushNamed(
+                //     '/login',
+                //     arguments: "UserLogin",
+                //   );
+                // }),
               ],
+            ),
             ),
             const SizedBox(
               height: 100,

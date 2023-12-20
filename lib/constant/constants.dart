@@ -1,13 +1,13 @@
 String mapBoxApiKey =
-    'pk.eyJ1Ijoic2F1cmFiaG13IiwiYSI6ImNreTRiYzNidjBhMTkydnB2dmpoeGt4ZmgifQ.2QZ4CsNiygDTAhkqASpbPg';
+    'pk.eyJ1Ijoic2hhbnRhbnVjc2QiLCJhIjoiY2xtdXRyYzh2MG1rODJrcGU2a3FraGJidiJ9.YZ_71J2yXV1neFm4p01jOw';
 
 String nftStorageApiKey =
-    '5ReEuIxsDhWxOLa2lVe9nB2PUjdEkwJ5jLsBGdBDGA.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.JuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzkwNzQxNjEwNSwibmFtZSI6ImxhbmRfZG9jdW1lbnQifQ.eyJzdWIiOiJkaWQ6ZXRocjoweDJmNGUwQTQwNTI4MkMyMDNkZDBEZmY2NUNlMkUwRTYyQUNCODFDRWUiLCJpc3MiOi';
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBkODk0MkFGRDI4QUU0NjMzNjc5MEJjQzU0MzVhZTQ5NzAyNEU5MjMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY5OTQzODg2NDc2NiwibmFtZSI6ImxhbmQifQ.6fwfWirELjJsvHTeup2-vKXG09Smu49Sr7XLhCmE9lo';
 
 const String rpcUrl =
-    "https://rpc-mumbai.maticvigil.com/v1/a5be973518c173bacd9be16a6314dd08b6abcd23";
-//"http://127.0.0.1:7545";
+    //"https://rpc-mumbai.maticvigil.com/v1/e5c1c2d68fa03cce040bae393b8193a7d100fe7b";
+"http://127.0.0.1:7545";
 
-const String contractAddress = "0xbc6d9e15255533C19f1589A7e9fbB60440a539e0";
+const String contractAddress = "0xFBA25f71716ff500801Ccc8dcE90a335C012978B";
 
-const int chainId = 80001; //Polygon testnet-80001, local ganache-1337
+const int chainId = 1337; //Polygon testnet-80001, local ganache-1337

@@ -14,46 +14,54 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
-        // logo
-        const Text(
-          'Land Registry',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+    return Container(
+      
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 0, 0, 0), // Set the background color to blue
+      ),
+   child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+         Row(
+  children: <Widget>[
+    SizedBox(
+      width: 70,
+      height: 70,
+      child: Image.network('icons/NPB_Transparent.png'),
+    ),
+    const SizedBox(width: 8), // Add some space between icon and text
+    const Text(
+      'NoPlayButton',
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 32,
+        fontStyle: FontStyle.normal,
+        color: Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    Padding(
+      padding: EdgeInsets.only(left: 400), 
+      child: const Text(
+        'Land Registry',
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 32,
+          fontStyle: FontStyle.normal,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
-
+      ),
+    ),
+  ],
+),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(14.0),
+              padding: const EdgeInsets.all(20.0),
               child: InkWell(
-                child: MouseRegion(
-                  onHover: (PointerHoverEvent evt) {
-                    appContainer?.style.cursor = 'pointer';
-                  },
-                  onExit: (PointerExitEvent evt) {
-                    appContainer?.style.cursor = 'default';
-                  },
-                  child: const Text(
-                    'Home',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      color: Color(0xff28313b),
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                      fontStyle: FontStyle.normal,
-                      letterSpacing: 1.627907,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(14.0),
-              child: GestureDetector(
-                onTap: () {
+                
+                 
+                  onTap: () {
                   // Navigator.push(
                   //     context,
                   //     MaterialPageRoute(
@@ -64,30 +72,27 @@ class HeaderWidget extends StatelessWidget {
                     '/login',
                     arguments: "UserLogin",
                   );
-                },
-                child: MouseRegion(
-                  onHover: (PointerHoverEvent evt) {
-                    appContainer?.style.cursor = 'pointer';
-                  },
+                
                   onExit: (PointerExitEvent evt) {
                     appContainer?.style.cursor = 'default';
+                  };
                   },
                   child: const Text(
                     'User',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      color: Color(0xff28313b),
-                      fontSize: 15,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
                       letterSpacing: 1.627907,
                     ),
-                  ),
+                  
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(14.0),
+              padding: const EdgeInsets.all(18.0),
               child: GestureDetector(
                 onTap: () {
                   // Navigator.push(
@@ -112,8 +117,8 @@ class HeaderWidget extends StatelessWidget {
                     'Land Inspector',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      color: Color(0xff28313b),
-                      fontSize: 15,
+                       color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
                       letterSpacing: 1.627907,
@@ -148,8 +153,8 @@ class HeaderWidget extends StatelessWidget {
                     'Contract Owner',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      color: Color(0xff28313b),
-                      fontSize: 15,
+                       color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
                       letterSpacing: 1.627907,
@@ -173,11 +178,11 @@ class HeaderWidget extends StatelessWidget {
                     appContainer?.style.cursor = 'default';
                   },
                   child: const Text(
-                    'About',
+                    '',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      color: Color(0xff28313b),
-                      fontSize: 15,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
                       letterSpacing: 1.627907,
@@ -206,6 +211,7 @@ class HeaderWidget extends StatelessWidget {
           ],
         )
       ],
+    )
     );
   }
 }

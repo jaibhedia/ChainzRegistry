@@ -39,8 +39,8 @@ class _MenuItemTileState extends State<MenuItemTile> {
           children: <Widget>[
             Icon(
               widget.icon,
-              color: widget.isSelected ? Color(0xFF4AC8EA) : Colors.white30,
-              size: 38,
+              color: widget.isSelected ? Color.fromARGB(255, 3, 122, 51) : Colors.white30,
+              size: 14,
             ),
             const SizedBox(width: 0),
             Text(widget.title,

@@ -42,35 +42,53 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
         backgroundColor: const Color(0xFF272D34),
         title: const Text('Login'),
       ),
+       backgroundColor: Color.fromARGB(255, 137, 196, 233),
       body: Container(
-        //width: 500,
+        
+        //width: 500,backgroundColor: const Color(0xFF272D34),
         alignment: Alignment.topCenter,
         child: Column(
+          
+          
           children: [
-            SvgPicture.asset(
-              'assets/auth.svg',
-              height: 280.0,
-              width: 520.0,
-              allowDrawingOutsideViewBox: true,
-            ),
+            Padding(
+  padding: EdgeInsets.all(20.0),
+  child: Image.network(
+    'icons/security-4210502_1920.jpg',
+    height: 280.0,
+    width: 520.0,
+  ),
+),
             // Image.asset(
             //   'assets/authenticate.png',
             //   height: 280,
             //   width: 520,
             // ),
             const Text(
-                'You can enter private key of your wallet Or you connect Metamask wallet'),
+                'Please enter your private key of your wallet OR you can connect with your Metamask wallet',
+                
+                style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.normal,
+          color: Color.fromARGB(255, 0, 0, 0),
+        ),
+        ),
+                
             SizedBox(
               width: width,
+              
               child: Padding(
                 padding: const EdgeInsets.all(15),
+                
                 child: Form(
                   key: _formKey,
                   child: TextFormField(
                     controller: keyController,
+                    
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter private key';
+                        return 'Please enter your private key';
+                        
                       }
                       return null;
                     },
@@ -110,7 +128,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                           }),
                       border: const OutlineInputBorder(),
                       labelText: 'Private Key',
-                      hintText: 'Enter Your PrivateKey',
+                      hintText: 'Please enter your private key',
                     ),
                   ),
                 ),
@@ -140,7 +158,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                                   await model.isContractOwner(privatekey);
                               if (temp == false) {
                                 setState(() {
-                                  errorMessage = "You are not authrosied";
+                                  errorMessage = "You are not authorised";
                                 });
                               } else {
                                 Navigator.pop(context);
@@ -158,7 +176,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                               bool temp = await model.isUserregistered();
                               if (temp) {
                                 setState(() {
-                                  errorMessage = "You already registered";
+                                  errorMessage = "You have already registered";
                                 });
                               } else {
                                 Navigator.push(
@@ -172,7 +190,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                                   await model.isLandInspector(privatekey);
                               if (temp == false) {
                                 setState(() {
-                                  errorMessage = "You are not authrosied";
+                                  errorMessage = "You are not authorised";
                                 });
                               } else {
                                 Navigator.pop(context);
@@ -222,7 +240,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                           });
                         }
                       }),
-            const Text('Or Click to connect Metamask'),
+            const Text('OR Click to connect Metamask'),
             ElevatedButton(
               onPressed: () async {
                 await model2.connect();
@@ -234,7 +252,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                     bool temp = await model2.isContractOwner();
                     if (temp == false) {
                       setState(() {
-                        errorMessage = "You are not authrosied";
+                        errorMessage = "You are not authorised";
                       });
                     } else {
                       Navigator.pop(context);
@@ -274,7 +292,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
                     bool temp = await model2.isLandInspector();
                     if (temp == false) {
                       setState(() {
-                        errorMessage = "You are not authrosied";
+                        errorMessage = "You are not authorised";
                       });
                     } else {
                       Navigator.pop(context);
