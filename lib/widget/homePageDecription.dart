@@ -66,7 +66,7 @@ Blockchain''',
             const SizedBox(width: 40),
             GestureDetector(
               onTap: () {
-                launchUrl("");
+                launchUrl("https://github.com/jaibhedia/NPB_LandRecordManagement");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {
@@ -179,7 +179,7 @@ Blockchain''',
 
             GestureDetector(
               onTap: () {
-                launchUrl("");
+                launchUrl("https://npb-e-vault.vercel.app/");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {
