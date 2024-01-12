@@ -3,36 +3,34 @@
 <a href="LICENSE"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=green"></a>
 <img src="https://img.shields.io/badge/Ethereum-20232A?style=for-the-badge&logo=ethereum&logoColor=white">
 <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white">
-## Land Registration using Blockchain
+
+## Land Registry using Blockchain
+
 ## Problem it Solves:
-1. The elimination of middlemen: The elimination of middlemen or brokers makes the process of land registration less expensive. Brokers who try to defraud uninformed people will be unable to do so any longer. Brokers frequently take a long time to finish procedures, thus our project will help people save time.
-3. A distributed tamper-proof ledger that prohibits ownership fraud.
-4. IPFS is used to store important property registration papers in a secure manner.
+A digital platform for secure and transparent land transactions.
+
+Key Features: Online transactions, AI/ML for price analysis, E-Vault for document safety, Reward system and a Bored button.
 
 ## Technology Stack:
 1. Ethereum Blockchain
 2. Polygon/Matic
-3. Web3Dart
+3. Dart
 4. IPFS
 5. Flutter
 6. Metamask
+7. Node.js
+8. Solidity
+9. NFT.Storage
+10. Hardhat
+
 
 ## Demo
-Our Dapp is demonstrated in this video [here](https://youtu.be/0Coz_ivOaHs)
+Our Dapp is demonstrated in this video [here](https://youtu.be/9aHm6GLnaRo)
 
 ## Run Application on deployed website
-Check out the deployed website [here](https://landregistry.live/)
+Check out the deployed website [here](https://noplaybutton-41656.web.app/)
 
-https://landregistry.live/
-
-This is for demonstration purposes only. With this key, you can log in as Land Inspector:
- <pre><b>6b86cddfedbec68ed2a1c7e14b993840a0848595ba5787aec9e8a38b18f0d96a</b></pre>
-For user: <pre><b>3ed4aff1a8ff8e28df3cd307112f9166886edcc85a27136908e3b1687b111f89</b></pre>\
-You can also use your own Ethereum wallet key as a user.
-
-#### Check new Smart contract At Polygon Testnet: [here](https://mumbai.polygonscan.com/address/0xbc6d9e15255533C19f1589A7e9fbB60440a539e0)
-
-#### Check Smart contract At (discontinued) Ropsten Ethereum Testnet: [here](https://ropsten.etherscan.io/address/0x702058ba021cd4e4f847b40f32b58aa5be3a4661)
+https://noplaybutton-41656.web.app/
 
 ## To Run Application Locally
 1. Clone the github repository and cd to the folder
@@ -79,31 +77,3 @@ flutter run -d web-server --web-port 5555
 ## Project Flowchart
 <img src="screenshots/flowchart.png" height="450">
 
-## Screenshots
-Home Page                   |                   Wallet connect/Login
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot1.png" height="225">  |<img src="screenshots/Screenshot7.png" height="225">
-
-Contract Owner Dashboard               |                   User Registration
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot10.png" height="225">  |<img src="screenshots/Screenshot12.png" height="225">
-
-Land Inspector Dashboard                   |                  User Verification 
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot11.png" height="225">     |<img src="screenshots/Screenshot5.png" height="225">
-
-User Dashboard               |                  Adding land on Map    
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot2.png" height="225">     |<img src="screenshots/Screenshot8.png" height="225">
-
-Land Gallery                |                   Land Details    
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot3.png" height="225">     |<img src="screenshots/Screenshot9.png" height="225">
-
-Received Request           |                   Make Payment  
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot6.png" height="225">     |<img src="screenshots/Screenshot4.png" height="225">
-
-Transfer ownership,Seller,buyer photo capture   |                Witness info,photo capture,transfer ownership 
-:---------------------------------:        |      :------------------------------:
-<img src="screenshots/Screenshot14.png" height="225">     |<img src="screenshots/Screenshot13.png" height="225">
