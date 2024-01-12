@@ -30,8 +30,6 @@ Our Dapp is demonstrated in this video [here](https://youtu.be/9aHm6GLnaRo)
 ## Run Application on deployed website
 Check out the deployed website [here](https://noplaybutton-41656.web.app/)
 
-https://noplaybutton-41656.web.app/
-
 ## To Run Application Locally
 1. Clone the github repository and cd to the folder
 2. Install the flutter 3.0.2, nodejs
