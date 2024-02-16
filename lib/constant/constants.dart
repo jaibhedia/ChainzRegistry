@@ -1,8 +1,8 @@
 String mapBoxApiKey =
-    'pk.eyJ1Ijoic2hhbnRhbnVjc2QiLCJhIjoiY2xtdXRyYzh2MG1rODJrcGU2a3FraGJidiJ9.YZ_71J2yXV1neFm4p01jOw';
+    'pk.eyJ1Ijoic2hhbnRhbnVjc2QiLCJhIjoiY2xxaTRqaTBwMWduazJ1bWs4OTFyYnBqMCJ9.3CwUjdQ3OZfLV10MGKDFMA';
 
 String nftStorageApiKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBkODk0MkFGRDI4QUU0NjMzNjc5MEJjQzU0MzVhZTQ5NzAyNEU5MjMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY5OTQzODg2NDc2NiwibmFtZSI6ImxhbmQifQ.6fwfWirELjJsvHTeup2-vKXG09Smu49Sr7XLhCmE9lo';
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBkODk0MkFGRDI4QUU0NjMzNjc5MEJjQzU0MzVhZTQ5NzAyNEU5MjMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTcwMzMzOTk0MTAwNiwibmFtZSI6ImxhbmQxIn0.YK9LPFc-Gu5o23WCBgecK4mm8PHxx1Cjc_3Iduq3Y1o';
 
 const String rpcUrl =
     //"https://rpc-mumbai.maticvigil.com/v1/e5c1c2d68fa03cce040bae393b8193a7d100fe7b";

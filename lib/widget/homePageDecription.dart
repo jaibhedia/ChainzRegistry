@@ -215,7 +215,7 @@ Blockchain''',
 
             GestureDetector(
               onTap: () {
-                launchUrl("http://localhost:3000/");
+                launchUrl("https://npb-nft.vercel.app/");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {
