@@ -9,7 +9,7 @@
 ## Problem it Solves:
 A digital platform for secure and transparent land transactions.
 
-Key Features: Online transactions, AI/ML for price analysis, E-Vault for document safety, Reward system and a Bored button.
+Key Features: Online transactions, AI/ML for price analysis, E-Vault for document safety, Reward system, and a Bored button.
 
 ## Technology Stack:
 1. Ethereum Blockchain
@@ -31,20 +31,20 @@ Our Dapp is demonstrated in this video [here](https://youtu.be/9aHm6GLnaRo)
 Check out the deployed website [here](https://noplaybutton-41656.web.app/)
 
 ## To Run Application Locally
-1. Clone the github repository and cd to the folder
+1. Clone the GitHub repository and cd to the folder
 2. Install the flutter 3.0.2, nodejs
 3. Install ganache and truffle as shown below:
 ```
 npm install -g truffle
 ```
 4. Open Ganache and keep it running in the Background
-5. Install the Metamask chrome extension, choose the local network and import the accounts
+5. Install the Metamask Chrome extension, choose the local network, and import the accounts
 6. Compile and run our migrations from the command line as shown below:
 ```
 truffle compile
 truffle migrate
 ```
-6 .Copy contract address as seen in the image below and paste in variable `contractAddress` located in the file `./lib/constant/constant.dart`
+6. Copy contract address as seen in the image below and paste in the variable `contractAddress` located in the file `./lib/constant/constant.dart`
 <pre>
 2_deploy_migration.js
 =====================
