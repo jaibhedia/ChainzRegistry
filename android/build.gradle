@@ -1,29 +1,70 @@
 buildscript {
+    // Define the Kotlin version
     ext.kotlin_version = '1.3.50'
+    
     repositories {
+        // Repositories to search for dependencies
         google()
         mavenCentral()
     }
 
     dependencies {
+        // Android Gradle plugin
         classpath 'com.android.tools.build:gradle:4.1.0'
+        // Kotlin Gradle plugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
 allprojects {
     repositories {
+        // Repositories to search for dependencies in all projects
         google()
         mavenCentral()
     }
 }
 
+// Customize the root project's build directory
 rootProject.buildDir = '../build'
+
 subprojects {
+    // Customize each subproject's build directory to be within the root project's build directory
     project.buildDir = "${rootProject.buildDir}/${project.name}"
+    // Ensure each subproject's evaluation depends on the ':app' project
     project.evaluationDependsOn(':app')
 }
 
+// Define a custom task to clean the build directory
 task clean(type: Delete) {
+    // Delete the root project's build directory
     delete rootProject.buildDir
 }
+
+// Custom task for checking Flutter SDK location
+task checkFlutterSdkLocation {
+    doLast {
+        // Check if flutter.sdk is defined in local.properties
+        def localPropertiesFile = file('local.properties')
+        def flutterSdkLocation = null
+
+        try {
+            if (localPropertiesFile.exists()) {
+                def Properties localProperties = new Properties()
+                localProperties.load(new FileInputStream(localPropertiesFile))
+                flutterSdkLocation = localProperties.getProperty('flutter.sdk')
+            }
+        } catch (FileNotFoundException ex) {
+            throw new GradleException("Failed to read local.properties file: ${ex.message}", ex)
+        } catch (IOException ex) {
+            throw new GradleException("Error reading local.properties file: ${ex.message}", ex)
+        }
+
+        // If flutterSdkLocation is null, throw an exception with detailed error message
+        if (flutterSdkLocation == null) {
+            throw new GradleException("Flutter SDK not found. Please define the location of the Flutter SDK by adding 'flutter.sdk=<flutter_sdk_location>' to your local.properties file. If you haven't installed Flutter yet, please download and install it from https://flutter.dev/docs/get-started.")
+        }
+    }
+}
+
+// Hook the checkFlutterSdkLocation task into the build process
+preBuild.dependsOn(checkFlutterSdkLocation)
