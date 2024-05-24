@@ -68,13 +68,28 @@ contract Land {
     mapping(uint => address)  AllUsers;
     mapping(uint => address[])  allUsersList;
     mapping(address => bool)  RegisteredUserMapping;
-    mapping(address => uint[])  MyLands;
+
     mapping(uint => Landreg) public lands;
     mapping(uint => LandRequest) public LandRequestMapping;
-    mapping(address => uint[])  MyReceivedLandRequest;
-    mapping(address => uint[])  MySentLandRequest;
+   
     mapping(uint => uint[])  allLandList;
     mapping(uint => uint[])  paymentDoneList;
+
+    // New struct definitions and mappings
+struct LandOwnership {
+    uint[] landIds;
+}
+mapping(address => LandOwnership) private MyLands;
+
+struct ReceivedRequests {
+    uint[] requestIds;
+}
+mapping(address => ReceivedRequests) private MyReceivedLandRequest;
+
+struct SentRequests {
+    uint[] requestIds;
+}
+mapping(address => SentRequests) private MySentLandRequest;
 
 
     function isContractOwner(address _addr) public view returns(bool){
@@ -173,14 +188,21 @@ contract Land {
 
 
     //-----------------------------------------------Land-----------------------------------------------
-    function addLand(uint _area, string memory _address, uint landPrice,string memory _allLatiLongi, uint _propertyPID,string memory _surveyNum, string memory _document) public {
-        require(isUserVerified(msg.sender));
-        landsCount++;
-        lands[landsCount] = Landreg(landsCount, _area, _address, landPrice,_allLatiLongi,_propertyPID, _surveyNum , _document,false,msg.sender,false);
-        MyLands[msg.sender].push(landsCount);
-        allLandList[1].push(landsCount);
-        // emit AddingLand(landsCount);
-    }
+   function addLand(
+    uint _area, 
+    string memory _address, 
+    uint landPrice, 
+    string memory _allLatiLongi, 
+    uint _propertyPID, 
+    string memory _surveyNum, 
+    string memory _document
+) public {
+    require(isUserVerified(msg.sender), "User is not verified");
+    landsCount++;
+    lands[landsCount] = Landreg(landsCount, _area, _address, landPrice, _allLatiLongi, _propertyPID, _surveyNum, _document, false, msg.sender, false);
+    MyLands[msg.sender].landIds.push(landsCount);  // Updated line
+    allLandList.push(landsCount);
+}
 
     function ReturnAllLandList() public view returns(uint[] memory)
     {
@@ -205,14 +227,14 @@ contract Land {
         lands[id].isforSell=true;
     }
 
-    function requestforBuy(uint _landId) public
-    {
-        require(isUserVerified(msg.sender) && isLandVerified(_landId));
-        requestCount++;
-        LandRequestMapping[requestCount]=LandRequest(requestCount,lands[_landId].ownerAddress,msg.sender,_landId,reqStatus.requested,false);
-        MyReceivedLandRequest[lands[_landId].ownerAddress].push(requestCount);
-        MySentLandRequest[msg.sender].push(requestCount);
-    }
+   function requestForBuy(uint _landId) public {
+    require(isUserVerified(msg.sender) && isLandVerified(_landId), "User or Land is not verified");
+    requestCount++;
+    LandRequestMapping[requestCount] = LandRequest(requestCount, lands[_landId].ownerAddress, msg.sender, _landId, reqStatus.requested, false);
+    MyReceivedLandRequest[lands[_landId].ownerAddress].requestIds.push(requestCount);  // Updated line
+    MySentLandRequest[msg.sender].requestIds.push(requestCount);  // Updated line
+}
+
 
     function myReceivedLandRequests() public view returns(uint[] memory)
     {
@@ -259,31 +281,27 @@ contract Land {
         return paymentDoneList[1];
     }
 
-    function transferOwnership(uint _requestId,string memory documentUrl) public returns(bool)
-    {
-        require(isLandInspector(msg.sender));
-        if(LandRequestMapping[_requestId].isPaymentDone==false)
-            return false;
-        documentId++;
-        LandRequestMapping[_requestId].requestStatus=reqStatus.commpleted;
-        MyLands[LandRequestMapping[_requestId].buyerId].push(LandRequestMapping[_requestId].landId);
+    function transferOwnership(uint _requestId, string memory documentUrl) public onlyLandInspector returns (bool) {
+    require(LandRequestMapping[_requestId].isPaymentDone, "Payment not done");
+    documentId++;
+    LandRequestMapping[_requestId].requestStatus = reqStatus.completed;
+    MyLands[LandRequestMapping[_requestId].buyerId].landIds.push(LandRequestMapping[_requestId].landId);  // Updated line
 
-        uint len=MyLands[LandRequestMapping[_requestId].sellerId].length;
-        for(uint i=0;i<len;i++)
-        {
-            if(MyLands[LandRequestMapping[_requestId].sellerId][i]==LandRequestMapping[_requestId].landId)
-            {
-                MyLands[LandRequestMapping[_requestId].sellerId][i]=MyLands[LandRequestMapping[_requestId].sellerId][len-1];
-                //MyLands[LandRequestMapping[_requestId].sellerId].length--;
-                MyLands[LandRequestMapping[_requestId].sellerId].pop();
-                break;
-            }
+    uint len = MyLands[LandRequestMapping[_requestId].sellerId].landIds.length;
+    for (uint i = 0; i < len; i++) {
+        if (MyLands[LandRequestMapping[_requestId].sellerId].landIds[i] == LandRequestMapping[_requestId].landId) {
+            MyLands[LandRequestMapping[_requestId].sellerId].landIds[i] = MyLands[LandRequestMapping[_requestId].sellerId].landIds[len - 1];
+            MyLands[LandRequestMapping[_requestId].sellerId].landIds.pop();
+            break;
         }
-        lands[LandRequestMapping[_requestId].landId].document=documentUrl;
-        lands[LandRequestMapping[_requestId].landId].isforSell=false;
-        lands[LandRequestMapping[_requestId].landId].ownerAddress=LandRequestMapping[_requestId].buyerId;
-        return true;
     }
+
+    lands[LandRequestMapping[_requestId].landId].document = documentUrl;
+    lands[LandRequestMapping[_requestId].landId].isForSell = false;
+    lands[LandRequestMapping[_requestId].landId].ownerAddress = LandRequestMapping[_requestId].buyerId;
+    return true;
+}
+
     function makePaymentTestFun(address payable _reveiver) public payable
     {
         _reveiver.transfer(msg.value);
