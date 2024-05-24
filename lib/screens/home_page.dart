@@ -36,30 +36,36 @@ class _home_pageState extends State<home_page> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 50, top: 0, right: 50, bottom: 0 ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                // crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  const LeftDescription(),
-                  Center(
-                    child: Container(
-                      width: 800,
-                      height: 800,
-                      decoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(0.6 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
-  ),         child: ClipRRect(
-                        borderRadius: BorderRadius.circular(0.3 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
-    child: Image.network(
-      'icons/land3-bg.png',
-      // height: 50.0,icons/land3.jpeg
-      // width: 50.0,
-      
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    const LeftDescription(),
+                    Center(
+                      child: Container(
+                        width: 800,
+                        height: 800,
+                        decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(0.6 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
+                  ),         child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                    child: ClipRRect(
+                            borderRadius: BorderRadius.circular(0.3 * 20), // 30% rounded of width or height, assuming 20.0 as initial width/height
+                      child: Image.network(
+                        'icons/land3-bg.png',
+                        // height: 50.0,icons/land3.jpeg
+                        // width: 50.0,
                         
-                      ),
-                    ),
-                  )
-                  )
-                ],
+                            
+                          ),
+                        ),
+                  ),
+                    )
+                    )
+                  ],
+                ),
               ),
             ),
 

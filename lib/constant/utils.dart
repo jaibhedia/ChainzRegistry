@@ -117,7 +117,7 @@ Widget CustomButton3(text, fun, color) => Container(
       margin: const EdgeInsets.all(10),
       child: ElevatedButton(
         onPressed: fun,
-        style: ElevatedButton.styleFrom(primary: color),
+        style: ElevatedButton.styleFrom(backgroundColor: color),
         child: Padding(
           padding: const EdgeInsets.all(0),
           child: Container(
