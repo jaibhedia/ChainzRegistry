@@ -478,7 +478,7 @@ Widget sentRequest() {
               Expanded(
                   child: Center(
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                        style: ElevatedButton.styleFrom(primary: Colors.green),
                         onPressed: data[4].toString() != '1'
                             ? null
                             : () async {
@@ -610,7 +610,7 @@ Widget sentRequest() {
                   child: Center(
                     child: ElevatedButton(
                         style:
-                            ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),
+                            ElevatedButton.styleFrom(primary: Colors.redAccent),
                         onPressed: data[4].toString() != '0'
                             ? null
                             : () async {
@@ -636,7 +636,7 @@ Widget sentRequest() {
                   child: Center(
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.greenAccent),
+                            primary: Colors.greenAccent),
                         onPressed: data[4].toString() != '0'
                             ? null
                             : () async {

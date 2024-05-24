@@ -190,7 +190,7 @@ class _AddLandInspectorState extends State<AddLandInspector> {
               Expanded(
                   child: Center(
                     child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                        style: ElevatedButton.styleFrom(primary: Colors.red),
                         onPressed: () async {
                           confirmDialog('Are you sure to remove?', context,
                               () async {

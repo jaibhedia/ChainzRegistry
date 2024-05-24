@@ -599,7 +599,7 @@ class _LandInspectorState extends State<LandInspector> {
                           ? const Text('Transfered')
                           : ElevatedButton.icon(
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.green),
+                                  primary: Colors.green),
                               onPressed: () async {
                                 SmartDialog.showLoading();
                                 try {
