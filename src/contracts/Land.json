@@ -48,7 +48,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -92,7 +93,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -151,7 +153,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -164,7 +167,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -233,7 +237,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -246,7 +251,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -259,7 +265,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -278,7 +285,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -343,7 +351,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -375,7 +384,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -394,7 +404,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -469,7 +480,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -482,7 +494,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -538,7 +551,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -570,7 +584,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -589,7 +604,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -628,7 +644,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -641,7 +658,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -686,7 +704,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -705,7 +724,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -718,7 +738,8 @@
       "name": "makePayment",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -731,7 +752,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -768,7 +790,8 @@
       "name": "makePaymentTestFun",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"InspectorMapping\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"age\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"designation\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"city\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"LandRequestMapping\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"reqId\",\"type\":\"uint256\"},{\"internalType\":\"address payable\",\"name\":\"sellerId\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"buyerId\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"landId\",\"type\":\"uint256\"},{\"internalType\":\"enum Land.reqStatus\",\"name\":\"requestStatus\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"isPaymentDone\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ReturnAllLandIncpectorList\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ReturnAllLandList\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ReturnAllUserList\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"UserMapping\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"id\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"age\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"city\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"aadharNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"panNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"document\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"isUserVerified\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_requestId\",\"type\":\"uint256\"}],\"name\":\"acceptRequest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_area\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_address\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"landPrice\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_allLatiLongi\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_propertyPID\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_surveyNum\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_document\",\"type\":\"string\"}],\"name\":\"addLand\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_age\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_designation\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_city\",\"type\":\"string\"}],\"name\":\"addLandInspector\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"}],\"name\":\"changeContractOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"documentId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"}],\"name\":\"isContractOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_id\",\"type\":\"address\"}],\"name\":\"isLandInspector\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"isLandVerified\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"}],\"name\":\"isUserRegistered\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"id\",\"type\":\"address\"}],\"name\":\"isUserVerified\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"landPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"lands\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"area\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"landAddress\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"landPrice\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"allLatitudeLongitude\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"propertyPID\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"physicalSurveyNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"document\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"isforSell\",\"type\":\"bool\"},{\"internalType\":\"address payable\",\"name\":\"ownerAddress\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isLandVerified\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"landsCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"makeItforSell\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_requestId\",\"type\":\"uint256\"}],\"name\":\"makePayment\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_reveiver\",\"type\":\"address\"}],\"name\":\"makePaymentTestFun\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"id\",\"type\":\"address\"}],\"name\":\"myAllLands\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"myReceivedLandRequests\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"mySentLandRequests\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_age\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_city\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_aadharNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_panNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_document\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_email\",\"type\":\"string\"}],\"name\":\"registerUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_requestId\",\"type\":\"uint256\"}],\"name\":\"rejectRequest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"}],\"name\":\"removeLandInspector\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"requesteStatus\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_landId\",\"type\":\"uint256\"}],\"name\":\"requestforBuy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"returnPaymentDoneList\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_requestId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"documentUrl\",\"type\":\"string\"}],\"name\":\"transferOwnership\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"userCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"verifyLand\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_userId\",\"type\":\"address\"}],\"name\":\"verifyUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/landContrat.sol\":\"Land\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/landContrat.sol\":{\"keccak256\":\"0xa85b3bbdc943a86c0c4d864ed576e8337382387e835b1042aaafb0c117b89d3e\",\"urls\":[\"bzz-raw://dc2ed1f99c5dc067b8b2592c46f9076b3dc750ffb4fd4ad95deaa8688455b826\",\"dweb:/ipfs/Qmcep2HaNjwWFuZpUoMQL258N2K87RgfHyf3V6X9oyGBCt\"]}},\"version\":1}",
@@ -778,7 +801,7 @@
   "sourceMap": "27:10223:1:-:0;;;78:65;;;;;;;;;;125:10;109:13;;:26;;;;;;;;;;;;;;;;;;27:10223;;;;;;",
   "deployedSourceMap": "27:10223:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1258:21;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;4113:203;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1286:22;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;5955:109;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7508:205;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2272:163;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;7027:133;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7297:205;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;4908:149;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;7965:729;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;5186:113;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1372:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6210:108;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;3187:599;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1315:22;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;10124:123;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;7166:125;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8702:117;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5063;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1827:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6440:135;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2560:481;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;5415:532;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;6326:104;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3049:130;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6583:436;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1549:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7855:104;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;7721:126;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;2090:174;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;3794:199;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1783:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4324:576;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;6072:132;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;8827:1291;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1258:21;;;;:::o;4113:203::-;4174:4;4199:21;:28;4221:5;4199:28;;;;;;;;;;;;;;;;;;;;;;;;;4196:113;;;4250:4;4243:11;;;;4196:113;4292:5;4285:12;;4113:203;;;;:::o;1286:22::-;;;;:::o;5955:109::-;6004:13;6042:11;:14;6054:1;6042:14;;;;;;;;;;;6035:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5955:109;:::o;7508:205::-;7620:10;7579:51;;:18;:30;7598:10;7579:30;;;;;;;;;;;:39;;;;;;;;;;;;:51;;;7571:60;;;;;;7687:18;7642;:30;7661:10;7642:30;;;;;;;;;;;:44;;;:63;;;;;;;;;;;;;;;;;;;;;;;;7508:205;:::o;2272:163::-;2353:13;;;;;;;;;;2341:25;;:10;:25;;;2333:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2422:5;2408:13;;:19;;;;;;;;;;;;;;;;;;2272:163;:::o;7027:133::-;7081:13;7119:21;:33;7141:10;7119:33;;;;;;;;;;;;;;;7112:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7027:133;:::o;7297:205::-;7409:10;7368:51;;:18;:30;7387:10;7368:30;;;;;;;;;;;:39;;;;;;;;;;;;:51;;;7360:60;;;;;;7476:18;7431;:30;7450:10;7431:30;;;;;;;;;;;:44;;;:63;;;;;;;;;;;;;;;;;;;;;;;;7297:205;:::o;4908:149::-;4970:27;4986:10;4970:15;:27::i;:::-;4962:36;;;;;;5045:4;5009:11;:20;5021:7;5009:20;;;;;;;;;;;;;;;:35;;;:40;;;;;;;;;;;;;;;;;;4908:149;:::o;7965:729::-;8082:10;8042:50;;:18;:30;8061:10;8042:30;;;;;;;;;;;:38;;;;;;;;;;;;:50;;;:118;;;;;8142:18;8096:64;;;;;;;;:18;:30;8115:10;8096:30;;;;;;;;;;;:44;;;;;;;;;;;;:64;;;;;;;;;8042:118;8034:127;;;;;;8219:21;8174:18;:30;8193:10;8174:30;;;;;;;;;;;:44;;;:66;;;;;;;;;;;;;;;;;;;;;;;;8503:5;:44;8509:18;:30;8528:10;8509:30;;;;;;;;;;;:37;;;8503:44;;;;;;;;;;;:57;;;;;;;;;;;;:66;;:77;8570:9;8503:77;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8636:4;8591:18;:30;8610:10;8591:30;;;;;;;;;;;:44;;;:49;;;;;;;;;;;;;;;;;;8651:15;:18;8667:1;8651:18;;;;;;;;;;;8675:10;8651:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7965:729;:::o;5186:113::-;5235:16;5276:12;:15;5289:1;5276:15;;;;;;;;;;;5269:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5186:113;:::o;1372:57::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;6210:108::-;6263:4;6286:5;:9;6292:2;6286:9;;;;;;;;;;;:24;;;;;;;;;;;;6279:31;;6210:108;;;:::o;3187:599::-;3268:13;;;;;;;;;;3256:25;;:10;:25;;;3248:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3329:26;:33;3356:5;3329:33;;;;;;;;;;;;;;;;;;;;;;;;;3321:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3435:5;3401:26;:33;3428:5;3401:33;;;;;;;;;;;;;;;;:39;;;;;;;;;;;;;;;;;;3455:8;3464:20;:23;3485:1;3464:23;;;;;;;;;;;:30;;;;3455:39;;3509:6;3505:274;3520:3;3518:1;:5;3505:274;;;3584:5;3556:33;;:20;:23;3577:1;3556:23;;;;;;;;;;;3580:1;3556:26;;;;;;;;;;;;;;;;;;;;;;;;;:33;;;3553:215;;;3650:20;:23;3671:1;3650:23;;;;;;;;;;;3678:1;3674:3;:5;3650:30;;;;;;;;;;;;;;;;;;;;;;;;;3623:20;:23;3644:1;3623:23;;;;;;;;;;;3647:1;3623:26;;;;;;;;;;;;;;;;:57;;;;;;;;;;;;;;;;;;3699:20;:23;3720:1;3699:23;;;;;;;;;;;:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3747:5;;3553:215;3524:3;;;;;;;3505:274;;;;3187:599;;:::o;1315:22::-;;;;:::o;10124:123::-;10210:9;:18;;:29;10229:9;10210:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;10124:123;:::o;7166:125::-;7216:13;7254:17;:29;7272:10;7254:29;;;;;;;;;;;;;;;7247:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7166:125;:::o;8702:117::-;8755:13;8793:15;:18;8809:1;8793:18;;;;;;;;;;;8786:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8702:117;:::o;5063:::-;5119:4;5142:11;:15;5154:2;5142:15;;;;;;;;;;;;;;;:30;;;;;;;;;;;;5135:37;;5063:117;;;:::o;1827:54::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;6440:135::-;6521:10;6497:34;;:5;:9;6503:2;6497:9;;;;;;;;;;;:22;;;;;;;;;;;;:34;;;6489:43;;;;;;6563:4;6543:5;:9;6549:2;6543:9;;;;;;;;;;;:19;;;:24;;;;;;;;;;;;;;;;;;6440:135;:::o;2560:481::-;2695:4;2729:10;2714:25;;:13;;;;;;;;;;:25;;;2711:55;;2761:5;2754:12;;;;2711:55;2800:10;2785:25;;:13;;;;;;;;;;:25;;;2777:34;;;;;;2856:4;2822:26;:33;2849:5;2822:33;;;;;;;;;;;;;;;;:38;;;;;;;;;;;;;;;;;;2871:20;:23;2892:1;2871:23;;;;;;;;;;;2900:5;2871:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2943:68;;;;;;;;2957:15;;2943:68;;;;2973:5;2943:68;;;;;;2979:5;2943:68;;;;2986:4;2943:68;;;;2992:12;2943:68;;;;3005:5;2943:68;;;2917:16;:23;2934:5;2917:23;;;;;;;;;;;;;;;:94;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;3029:4;3022:11;;2560:481;;;;;;;;:::o;5415:532::-;5607:26;5622:10;5607:14;:26::i;:::-;5599:35;;;;;;5645:10;;:12;;;;;;;;;;;;;5688:121;;;;;;;;5696:10;;5688:121;;;;5708:5;5688:121;;;;5715:8;5688:121;;;;5725:9;5688:121;;;;5735:13;5688:121;;;;5749:12;5688:121;;;;5763:10;5688:121;;;;5776:9;5688:121;;;;5786:5;5688:121;;;;;;5792:10;5688:121;;;;;;5803:5;5688:121;;;;;5668:5;:17;5674:10;;5668:17;;;;;;;;;;;:141;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5820:7;:19;5828:10;5820:19;;;;;;;;;;;;;;;5845:10;;5820:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5867:11;:14;5879:1;5867:14;;;;;;;;;;;5887:10;;5867:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5415:532;;;;;;;:::o;6326:104::-;6379:13;6411:7;:11;6419:2;6411:11;;;;;;;;;;;;;;;6404:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6326:104;;;:::o;3049:130::-;3107:16;3148:20;:23;3169:1;3148:23;;;;;;;;;;;3141:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3049:130;:::o;6583:436::-;6651:26;6666:10;6651:14;:26::i;:::-;:53;;;;;6681:23;6696:7;6681:14;:23::i;:::-;6651:53;6643:62;;;;;;6716:12;;:14;;;;;;;;;;;;;6774:98;;;;;;;;6786:12;;6774:98;;;;6799:5;:14;6805:7;6799:14;;;;;;;;;;;:27;;;;;;;;;;;;6774:98;;;;;;6827:10;6774:98;;;;;;6838:7;6774:98;;;;6846:19;6774:98;;;;;;;;;;;;6866:5;6774:98;;;;;6741:18;:32;6760:12;;6741:32;;;;;;;;;;;:131;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6883:21;:50;6905:5;:14;6911:7;6905:14;;;;;;;;;;;:27;;;;;;;;;;;;6883:50;;;;;;;;;;;;;;;6939:12;;6883:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6963:17;:29;6981:10;6963:29;;;;;;;;;;;;;;;6998:12;;6963:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6583:436;:::o;1549:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;7855:104::-;7903:4;7932:5;:9;7938:2;7932:9;;;;;;;;;;;:19;;;7925:26;;7855:104;;;:::o;7721:126::-;7774:4;7803:18;:22;7822:2;7803:22;;;;;;;;;;;:36;;;;;;;;;;;;7796:43;;7721:126;;;:::o;2090:174::-;2150:4;2176:13;;;;;;;;;;;2169:20;;:5;:20;;;2166:90;;;2211:4;2204:11;;;;2166:90;2251:5;2244:12;;2090:174;;;;:::o;3794:199::-;3853:4;3873:26;:31;3900:3;3873:31;;;;;;;;;;;;;;;;;;;;;;;;;3870:116;;;3927:4;3920:11;;;;3870:116;3969:5;3962:12;;3794:199;;;;:::o;1783:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;4324:576::-;4535:21;:33;4557:10;4535:33;;;;;;;;;;;;;;;;;;;;;;;;;4534:34;4526:43;;;;;;4618:4;4582:21;:33;4604:10;4582:33;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;4633:9;;:11;;;;;;;;;;;;;4655:12;:15;4668:1;4655:15;;;;;;;;;;;4676:10;4655:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4718:10;4698:8;:19;4707:9;;4698:19;;;;;;;;;;;;:30;;;;;;;;;;;;;;;;;;4765:85;;;;;;;;4770:10;4765:85;;;;;;4782:5;4765:85;;;;4789:4;4765:85;;;;4795:5;4765:85;;;;4801:13;4765:85;;;;4815:10;4765:85;;;;4827:9;4765:85;;;;4837:6;4765:85;;;;4844:5;4765:85;;;;;4739:11;:23;4751:10;4739:23;;;;;;;;;;;;;;;:111;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4324:576;;;;;;;:::o;6072:132::-;6127:27;6143:10;6127:15;:27::i;:::-;6119:36;;;;;;6192:4;6166:5;:10;6172:3;6166:10;;;;;;;;;;;:25;;;:30;;;;;;;;;;;;;;;;;;6072:132;:::o;8827:1291::-;8912:4;8942:27;8958:10;8942:15;:27::i;:::-;8934:36;;;;;;9030:5;8984:51;;:18;:30;9003:10;8984:30;;;;;;;;;;;:44;;;;;;;;;;;;:51;;;8981:81;;;9057:5;9050:12;;;;8981:81;9073:10;;:12;;;;;;;;;;;;;9141:20;9096:18;:30;9115:10;9096:30;;;;;;;;;;;:44;;;:65;;;;;;;;;;;;;;;;;;;;;;;;9172:7;:47;9180:18;:30;9199:10;9180:30;;;;;;;;;;;:38;;;;;;;;;;;;9172:47;;;;;;;;;;;;;;;9225:18;:30;9244:10;9225:30;;;;;;;;;;;:37;;;9172:91;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;9276:8;9285:7;:48;9293:18;:30;9312:10;9293:30;;;;;;;;;;;:39;;;;;;;;;;;;9285:48;;;;;;;;;;;;;;;:55;;;;9276:64;;9355:6;9351:484;9366:3;9364:1;:5;9351:484;;;9455:18;:30;9474:10;9455:30;;;;;;;;;;;:37;;;9402:7;:48;9410:18;:30;9429:10;9410:30;;;;;;;;;;;:39;;;;;;;;;;;;9402:48;;;;;;;;;;;;;;;9451:1;9402:51;;;;;;;;;;;;;;;;:90;9399:425;;;9578:7;:48;9586:18;:30;9605:10;9586:30;;;;;;;;;;;:39;;;;;;;;;;;;9578:48;;;;;;;;;;;;;;;9631:1;9627:3;:5;9578:55;;;;;;;;;;;;;;;;9526:7;:48;9534:18;:30;9553:10;9534:30;;;;;;;;;;;:39;;;;;;;;;;;;9526:48;;;;;;;;;;;;;;;9575:1;9526:51;;;;;;;;;;;;;;;:107;;;;9730:7;:48;9738:18;:30;9757:10;9738:30;;;;;;;;;;;:39;;;;;;;;;;;;9730:48;;;;;;;;;;;;;;;:54;;;;;;;;;;;;;;;;;;;;;;;;9803:5;;9399:425;9370:3;;;;;;;9351:484;;;;9899:11;9845:5;:44;9851:18;:30;9870:10;9851:30;;;;;;;;;;;:37;;;9845:44;;;;;;;;;;;:53;;:65;;;;;;;;;;;;:::i;:::-;;9976:5;9921;:44;9927:18;:30;9946:10;9927:30;;;;;;;;;;;:37;;;9921:44;;;;;;;;;;;:54;;;:60;;;;;;;;;;;;;;;;;;10050:18;:30;10069:10;10050:30;;;;;;;;;;;:38;;;;;;;;;;;;9992:5;:44;9998:18;:30;10017:10;9998:30;;;;;;;;;;;:37;;;9992:44;;;;;;;;;;;:57;;;:96;;;;;;;;;;;;;;;;;;10106:4;10099:11;;;8827:1291;;;;;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.6.0;\r\n\r\ncontract Land {\r\n    address contractOwner;\r\n\r\n    constructor() public{\r\n        contractOwner = msg.sender;\r\n    }\r\n\r\n    struct Landreg {\r\n        uint id;\r\n        uint area;\r\n        string landAddress;\r\n        uint landPrice;\r\n        string allLatitudeLongitude;\r\n        //string allLongitude;\r\n        uint propertyPID;\r\n        string physicalSurveyNumber;\r\n        string document;\r\n        bool isforSell;\r\n        address payable ownerAddress;\r\n        bool isLandVerified;\r\n    }\r\n\r\n    struct User{\r\n        address id;\r\n        string name;\r\n        uint age;\r\n        string city;\r\n        string aadharNumber;\r\n        string panNumber;\r\n        string document;\r\n        string email;\r\n        bool isUserVerified;\r\n    }\r\n\r\n    struct LandInspector {\r\n        uint id;\r\n        address _addr;\r\n        string name;\r\n        uint age;\r\n        string designation;\r\n        string city;\r\n    }\r\n\r\n    struct LandRequest{\r\n        uint reqId;\r\n        address payable sellerId;\r\n        address payable buyerId;\r\n        uint landId;\r\n        reqStatus requestStatus;\r\n        bool isPaymentDone;\r\n    }\r\n    enum reqStatus {requested,accepted,rejected,paymentdone,commpleted}\r\n\r\n\r\n    uint inspectorsCount;\r\n    uint public userCount;\r\n    uint public landsCount;\r\n    uint public documentId;\r\n    uint requestCount;\r\n\r\n\r\n    mapping(address => LandInspector) public InspectorMapping;\r\n    mapping(uint => address[]) allLandInspectorList;\r\n    mapping(address => bool)  RegisteredInspectorMapping;\r\n    mapping(address => User) public UserMapping;\r\n    mapping(uint => address)  AllUsers;\r\n    mapping(uint => address[])  allUsersList;\r\n    mapping(address => bool)  RegisteredUserMapping;\r\n    mapping(address => uint[])  MyLands;\r\n    mapping(uint => Landreg) public lands;\r\n    mapping(uint => LandRequest) public LandRequestMapping;\r\n    mapping(address => uint[])  MyReceivedLandRequest;\r\n    mapping(address => uint[])  MySentLandRequest;\r\n    mapping(uint => uint[])  allLandList;\r\n    mapping(uint => uint[])  paymentDoneList;\r\n\r\n\r\n    function isContractOwner(address _addr) public view returns(bool){\r\n        if(_addr==contractOwner)\r\n            return true;\r\n        else\r\n            return false;\r\n    }\r\n\r\n    function changeContractOwner(address _addr)public {\r\n        require(msg.sender==contractOwner,\"you are not contractOwner\");\r\n\r\n        contractOwner=_addr;\r\n    }\r\n\r\n    //-----------------------------------------------LandInspector-----------------------------------------------\r\n\r\n    function addLandInspector(address _addr,string memory _name, uint _age, string memory _designation,string memory _city) public returns(bool){\r\n        if(contractOwner!=msg.sender)\r\n            return false;\r\n        require(contractOwner==msg.sender);\r\n        RegisteredInspectorMapping[_addr]=true;\r\n        allLandInspectorList[1].push(_addr);\r\n        InspectorMapping[_addr] = LandInspector(inspectorsCount,_addr,_name, _age, _designation,_city);\r\n        return true;\r\n    }\r\n\r\n    function ReturnAllLandIncpectorList() public view returns(address[] memory)\r\n    {\r\n        return allLandInspectorList[1];\r\n    }\r\n\r\n    function removeLandInspector(address _addr) public{\r\n        require(msg.sender==contractOwner,\"You are not contractOwner\");\r\n        require(RegisteredInspectorMapping[_addr],\"Land Inspector not found\");\r\n        RegisteredInspectorMapping[_addr]=false;\r\n\r\n\r\n        uint len=allLandInspectorList[1].length;\r\n        for(uint i=0;i<len;i++)\r\n        {\r\n            if(allLandInspectorList[1][i]==_addr)\r\n            {\r\n                allLandInspectorList[1][i]=allLandInspectorList[1][len-1];\r\n                allLandInspectorList[1].pop();\r\n                break;\r\n            }\r\n        }\r\n    }\r\n\r\n    function isLandInspector(address _id) public view returns (bool) {\r\n        if(RegisteredInspectorMapping[_id]){\r\n            return true;\r\n        }else{\r\n            return false;\r\n        }\r\n    }\r\n\r\n\r\n\r\n    //-----------------------------------------------User-----------------------------------------------\r\n\r\n    function isUserRegistered(address _addr) public view returns(bool)\r\n    {\r\n        if(RegisteredUserMapping[_addr]){\r\n            return true;\r\n        }else{\r\n            return false;\r\n        }\r\n    }\r\n\r\n    function registerUser(string memory _name, uint _age, string memory _city,string memory _aadharNumber, string memory _panNumber, string memory _document, string memory _email\r\n    ) public {\r\n\r\n        require(!RegisteredUserMapping[msg.sender]);\r\n\r\n        RegisteredUserMapping[msg.sender] = true;\r\n        userCount++;\r\n        allUsersList[1].push(msg.sender);\r\n        AllUsers[userCount]=msg.sender;\r\n        UserMapping[msg.sender] = User(msg.sender, _name, _age, _city,_aadharNumber,_panNumber, _document,_email,false);\r\n        //emit Registration(msg.sender);\r\n    }\r\n\r\n    function verifyUser(address _userId) public{\r\n        require(isLandInspector(msg.sender));\r\n        UserMapping[_userId].isUserVerified=true;\r\n    }\r\n    function isUserVerified(address id) public view returns(bool){\r\n        return UserMapping[id].isUserVerified;\r\n    }\r\n    function ReturnAllUserList() public view returns(address[] memory)\r\n    {\r\n        return allUsersList[1];\r\n    }\r\n\r\n\r\n    //-----------------------------------------------Land-----------------------------------------------\r\n    function addLand(uint _area, string memory _address, uint landPrice,string memory _allLatiLongi, uint _propertyPID,string memory _surveyNum, string memory _document) public {\r\n        require(isUserVerified(msg.sender));\r\n        landsCount++;\r\n        lands[landsCount] = Landreg(landsCount, _area, _address, landPrice,_allLatiLongi,_propertyPID, _surveyNum , _document,false,msg.sender,false);\r\n        MyLands[msg.sender].push(landsCount);\r\n        allLandList[1].push(landsCount);\r\n        // emit AddingLand(landsCount);\r\n    }\r\n\r\n    function ReturnAllLandList() public view returns(uint[] memory)\r\n    {\r\n        return allLandList[1];\r\n    }\r\n\r\n    function verifyLand(uint _id) public{\r\n        require(isLandInspector(msg.sender));\r\n        lands[_id].isLandVerified=true;\r\n    }\r\n    function isLandVerified(uint id) public view returns(bool){\r\n        return lands[id].isLandVerified;\r\n    }\r\n\r\n    function myAllLands(address id) public view returns( uint[] memory){\r\n        return MyLands[id];\r\n    }\r\n\r\n\r\n    function makeItforSell(uint id) public{\r\n        require(lands[id].ownerAddress==msg.sender);\r\n        lands[id].isforSell=true;\r\n    }\r\n\r\n    function requestforBuy(uint _landId) public\r\n    {\r\n        require(isUserVerified(msg.sender) && isLandVerified(_landId));\r\n        requestCount++;\r\n        LandRequestMapping[requestCount]=LandRequest(requestCount,lands[_landId].ownerAddress,msg.sender,_landId,reqStatus.requested,false);\r\n        MyReceivedLandRequest[lands[_landId].ownerAddress].push(requestCount);\r\n        MySentLandRequest[msg.sender].push(requestCount);\r\n    }\r\n\r\n    function myReceivedLandRequests() public view returns(uint[] memory)\r\n    {\r\n        return MyReceivedLandRequest[msg.sender];\r\n    }\r\n    function mySentLandRequests() public view returns(uint[] memory)\r\n    {\r\n        return MySentLandRequest[msg.sender];\r\n    }\r\n    function acceptRequest(uint _requestId) public\r\n    {\r\n        require(LandRequestMapping[_requestId].sellerId==msg.sender);\r\n        LandRequestMapping[_requestId].requestStatus=reqStatus.accepted;\r\n    }\r\n    function rejectRequest(uint _requestId) public\r\n    {\r\n        require(LandRequestMapping[_requestId].sellerId==msg.sender);\r\n        LandRequestMapping[_requestId].requestStatus=reqStatus.rejected;\r\n    }\r\n\r\n    function requesteStatus(uint id) public view returns(bool)\r\n    {\r\n        return LandRequestMapping[id].isPaymentDone;\r\n    }\r\n\r\n    function landPrice(uint id) public view returns(uint)\r\n    {\r\n        return lands[id].landPrice;\r\n    }\r\n    function makePayment(uint _requestId) public payable\r\n    {\r\n        require(LandRequestMapping[_requestId].buyerId==msg.sender && LandRequestMapping[_requestId].requestStatus==reqStatus.accepted);\r\n\r\n        LandRequestMapping[_requestId].requestStatus=reqStatus.paymentdone;\r\n        //LandRequestMapping[_requestId].sellerId.transfer(lands[LandRequestMapping[_requestId].landId].landPrice);\r\n        //lands[LandRequestMapping[_requestId].landId].ownerAddress.transfer(lands[LandRequestMapping[_requestId].landId].landPrice);\r\n        lands[LandRequestMapping[_requestId].landId].ownerAddress.transfer(msg.value);\r\n        LandRequestMapping[_requestId].isPaymentDone=true;\r\n        paymentDoneList[1].push(_requestId);\r\n    }\r\n\r\n    function returnPaymentDoneList() public view returns(uint[] memory)\r\n    {\r\n        return paymentDoneList[1];\r\n    }\r\n\r\n    function transferOwnership(uint _requestId,string memory documentUrl) public returns(bool)\r\n    {\r\n        require(isLandInspector(msg.sender));\r\n        if(LandRequestMapping[_requestId].isPaymentDone==false)\r\n            return false;\r\n        documentId++;\r\n        LandRequestMapping[_requestId].requestStatus=reqStatus.commpleted;\r\n        MyLands[LandRequestMapping[_requestId].buyerId].push(LandRequestMapping[_requestId].landId);\r\n\r\n        uint len=MyLands[LandRequestMapping[_requestId].sellerId].length;\r\n        for(uint i=0;i<len;i++)\r\n        {\r\n            if(MyLands[LandRequestMapping[_requestId].sellerId][i]==LandRequestMapping[_requestId].landId)\r\n            {\r\n                MyLands[LandRequestMapping[_requestId].sellerId][i]=MyLands[LandRequestMapping[_requestId].sellerId][len-1];\r\n                //MyLands[LandRequestMapping[_requestId].sellerId].length--;\r\n                MyLands[LandRequestMapping[_requestId].sellerId].pop();\r\n                break;\r\n            }\r\n        }\r\n        lands[LandRequestMapping[_requestId].landId].document=documentUrl;\r\n        lands[LandRequestMapping[_requestId].landId].isforSell=false;\r\n        lands[LandRequestMapping[_requestId].landId].ownerAddress=LandRequestMapping[_requestId].buyerId;\r\n        return true;\r\n    }\r\n    function makePaymentTestFun(address payable _reveiver) public payable\r\n    {\r\n        _reveiver.transfer(msg.value);\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\shann\\finalamc\\contracts\\landContrat.sol",
+  "sourcePath": "D:\\flutter-projects\\ChainzRegistry\\contracts\\landContrat.sol",
   "ast": {
     "absolutePath": "project:/contracts/landContrat.sol",
     "exportedSymbols": {
@@ -28632,12 +28655,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xFBA25f71716ff500801Ccc8dcE90a335C012978B",
-      "transactionHash": "0x2e8e3209a85f8e0cdce6c404a88ca5f9faca18192e7b9750ef867f692637da59"
+      "address": "0x94C9DC7b0dCFaa8669A50283E93Ea0CBCa4f7b83",
+      "transactionHash": "0xd5951ba846678b3c35812bbdd074a9613e04661407516b1e670787c36dc5065b"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-02-16T20:23:18.249Z",
+  "updatedAt": "2024-05-24T17:35:17.328Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

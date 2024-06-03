@@ -14,246 +14,249 @@ class LeftDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        //title
-        const FittedBox(
-          child: Text('''Land
-Registration Using
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          //title
+          const FittedBox(
+            child: Text('''Land Registration
+     Using
 Blockchain''',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                color: Color.fromARGB(255, 244, 244, 245),
-                fontSize: 80,
-                fontWeight: FontWeight.w400,
-                fontStyle: FontStyle.italic,
-                letterSpacing: 1.5,
-                backgroundColor: Color.fromARGB(0, 213, 104, 104)
-              )),
-        ),
-        // Description
-
-        const SizedBox(
-          height: 20,
-        ),
-        Row(
-          children: <Widget>[
-           
-           
-            InkWell(
-              onTap: () {},
-              child: Container(
-                  width: 150,
-                  height: 57,
-                 
-                    child: Image.network('icons/github.png'),
-                        // style: TextStyle(
-                        //   fontFamily: 'Poppins',
-                        //   color: Color(0xffffffff),
-                        //   fontSize: 14,
-                        //   fontWeight: FontWeight.w400,
-                        //   fontStyle: FontStyle.normal,
-                        //   letterSpacing: 2,
-                        // ),
-                  
-                  decoration: BoxDecoration(
-                      color: const Color(0xff47afc9),
-                      borderRadius: BorderRadius.circular(8))),
-            ),
-            //
-            const SizedBox(width: 40),
-            GestureDetector(
-              onTap: () {
-                launchUrl("https://github.com/jaibhedia/NPB_LandRecordManagement");
-              },
-              child: MouseRegion(
-                onHover: (PointerHoverEvent evt) {
-                  appContainer?.style.cursor = 'pointer';
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  color: Color.fromARGB(255, 244, 244, 245),
+                  fontSize: 80,
+                  fontWeight: FontWeight.w400,
+                  // fontStyle: FontStyle.italic,
+                  letterSpacing: 1.5,
+                  backgroundColor: Color.fromARGB(0, 213, 104, 104)
+                )),
+          ),
+          // Description
+      
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: <Widget>[
+             
+             
+              InkWell(
+                onTap: () {},
+                child: Container(
+                    width: 150,
+                    height: 57,
+                   
+                      child: Image.network('icons/github.png'),
+                          // style: TextStyle(
+                          //   fontFamily: 'Poppins',
+                          //   color: Color(0xffffffff),
+                          //   fontSize: 14,
+                          //   fontWeight: FontWeight.w400,
+                          //   fontStyle: FontStyle.normal,
+                          //   letterSpacing: 2,
+                          // ),
+                    
+                    decoration: BoxDecoration(
+                        color: const Color(0xff47afc9),
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              //
+              const SizedBox(width: 40),
+              GestureDetector(
+                onTap: () {
+                  launchUrl("https://github.com/jaibhedia/NPB_LandRecordManagement");
                 },
-                onExit: (PointerExitEvent evt) {
-                  appContainer?.style.cursor = 'default';
-                },
-                child: Row(
-                  children: const [
-                    SizedBox(
-                      width: 34,
-                      height: 34,
-                       child: Icon(Icons.play_circle_fill),
-                      
-                    ),
-                    SizedBox(
-                      width: 10,
-                      
-                    ),
-                    Text("NPB_ml",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xff47afc9),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        )
-                        )
+                child: MouseRegion(
+                  onHover: (PointerHoverEvent evt) {
+                    appContainer?.style.cursor = 'pointer';
+                  },
+                  onExit: (PointerExitEvent evt) {
+                    appContainer?.style.cursor = 'default';
+                  },
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 34,
+                        height: 34,
+                         child: Icon(Icons.play_circle_fill),
                         
-                  ],
-                ),
-                
-              ),
-            ),
-
-
-            GestureDetector(
-              onTap: () {
-                launchUrl("https://flappybacon.netlify.com/");
-              },
-              child: MouseRegion(
-                onHover: (PointerHoverEvent evt) {
-                  appContainer?.style.cursor = 'pointer';
-                },
-                onExit: (PointerExitEvent evt) {
-                  appContainer?.style.cursor = 'default';
-                },
-                child: Row(
-                  children: const [
-                    SizedBox(
-                      width: 34,
-                      height: 34,
-                       child: Icon(Icons.play_circle_fill),
-                      
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text("Bored??",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xff47afc9),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        ))
-                  ],
+                      ),
+                      SizedBox(
+                        width: 10,
+                        
+                      ),
+                      Text("NPB_ml",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            color: Color(0xff47afc9),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            letterSpacing: 2,
+                          )
+                          )
+                          
+                    ],
+                  ),
+                  
                 ),
               ),
-            ),
-
-            GestureDetector(
-              onTap: () {
-                launchUrl("");
-              },
-              child: MouseRegion(
-                onHover: (PointerHoverEvent evt) {
-                  appContainer?.style.cursor = 'pointer';
+      
+      
+              GestureDetector(
+                onTap: () {
+                  launchUrl("https://flappybacon.netlify.com/");
                 },
-                onExit: (PointerExitEvent evt) {
-                  appContainer?.style.cursor = 'default';
-                },
-                child: Row(
-                  children: const [
-                    SizedBox(
-                      width: 34,
-                      height: 34,
-                       child: Icon(Icons.play_circle_fill),
-                      
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text("Watch Demo",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xff47afc9),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        ))
-                  ],
+                child: MouseRegion(
+                  onHover: (PointerHoverEvent evt) {
+                    appContainer?.style.cursor = 'pointer';
+                  },
+                  onExit: (PointerExitEvent evt) {
+                    appContainer?.style.cursor = 'default';
+                  },
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 34,
+                        height: 34,
+                         child: Icon(Icons.play_circle_fill),
+                        
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Bored??",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            color: Color(0xff47afc9),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            letterSpacing: 2,
+                          ))
+                    ],
+                  ),
                 ),
               ),
-            ),
-
-            GestureDetector(
-              onTap: () {
-                launchUrl("https://npb-e-vault.vercel.app/");
-              },
-              child: MouseRegion(
-                onHover: (PointerHoverEvent evt) {
-                  appContainer?.style.cursor = 'pointer';
+      
+              GestureDetector(
+                onTap: () {
+                  launchUrl("");
                 },
-                onExit: (PointerExitEvent evt) {
-                  appContainer?.style.cursor = 'default';
-                },
-                child: Row(
-                  children: const [
-                    SizedBox(
-                      width: 34,
-                      height: 34,
-                       child: Icon(Icons.play_circle_fill),
-                      
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text("NBP_EVault",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xff47afc9),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        ))
-                  ],
+                child: MouseRegion(
+                  onHover: (PointerHoverEvent evt) {
+                    appContainer?.style.cursor = 'pointer';
+                  },
+                  onExit: (PointerExitEvent evt) {
+                    appContainer?.style.cursor = 'default';
+                  },
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 34,
+                        height: 34,
+                         child: Icon(Icons.play_circle_fill),
+                        
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Watch Demo",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            color: Color(0xff47afc9),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            letterSpacing: 2,
+                          ))
+                    ],
+                  ),
                 ),
               ),
-            ),
-
-            GestureDetector(
-              onTap: () {
-                launchUrl("https://npb-nft.vercel.app/");
-              },
-              child: MouseRegion(
-                onHover: (PointerHoverEvent evt) {
-                  appContainer?.style.cursor = 'pointer';
+      
+              GestureDetector(
+                onTap: () {
+                  launchUrl("https://npb-e-vault.vercel.app/");
                 },
-                onExit: (PointerExitEvent evt) {
-                  appContainer?.style.cursor = 'default';
-                },
-                child: Row(
-                  children: const [
-                    SizedBox(
-                      width: 34,
-                      height: 34,
-                       child: Icon(Icons.play_circle_fill),
-                      
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text("NBP_NFT",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Color(0xff47afc9),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          letterSpacing: 2,
-                        ))
-                  ],
+                child: MouseRegion(
+                  onHover: (PointerHoverEvent evt) {
+                    appContainer?.style.cursor = 'pointer';
+                  },
+                  onExit: (PointerExitEvent evt) {
+                    appContainer?.style.cursor = 'default';
+                  },
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 34,
+                        height: 34,
+                         child: Icon(Icons.play_circle_fill),
+                        
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("NBP_EVault",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            color: Color(0xff47afc9),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            letterSpacing: 2,
+                          ))
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
-        ),
-        const SizedBox(
-          height: 100,
-        )
-      ],
+      
+              GestureDetector(
+                onTap: () {
+                  launchUrl("https://npb-nft.vercel.app/");
+                },
+                child: MouseRegion(
+                  onHover: (PointerHoverEvent evt) {
+                    appContainer?.style.cursor = 'pointer';
+                  },
+                  onExit: (PointerExitEvent evt) {
+                    appContainer?.style.cursor = 'default';
+                  },
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 34,
+                        height: 34,
+                         child: Icon(Icons.play_circle_fill),
+                        
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("NBP_NFT",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            color: Color(0xff47afc9),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            letterSpacing: 2,
+                          ))
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 100,
+          )
+        ],
+      ),
     );
   }
 }
