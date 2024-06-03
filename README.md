@@ -80,8 +80,10 @@ flutter run -d web-server --web-port 5555
 Thanks to all the contributors for helping this project grow! 🍻
 
 <a href="https://github.com/jaibhedia/ChainzRegistry/graphs/contributors">
+   
 <img src="https://contrib.rocks/image?repo=jaibhedia/ChainzRegistry " />
 </a>
+
 ## 🙏 Support
 
 Don't forget to leave a star ⭐ for this project!
