@@ -14,7 +14,7 @@
 </div>
 <hr>
 
-## :zap:  About Us:
+## :zap:  About Us :
 A digital platform for secure and transparent land transactions.
 </br>
 ### Key Features: 
@@ -49,7 +49,7 @@ Check out the deployed website [here](https://noplaybutton-41656.web.app/)
 
 
 <!---------------------------------------------------------------------- HEADERS--------------------------------------------------------------->
-   ## ⚡Getting Started:
+   ## ⚡Getting Started :
    
    ### To Run Application Locally:
    
