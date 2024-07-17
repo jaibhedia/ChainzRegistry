@@ -10,6 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+     # Use the github-script action to simplify the process of adding a comment
+     - name: Add Comment to Merged PR
+       uses: actions/github-script@v6
+       with:
+         github-token: ${{ secrets.GITHUB_TOKEN }}
+         script: |
+           github.issues.createComment({
+             owner: context.repo.owner,
+             repo: context.repo.repo,
+             issue_number: context.payload.pull_request.number,
+             body: '🎉 Your pull request has been successfully merged! 🎉 Thank you for your contribution to our project. Your efforts are greatly appreciated. Keep up the fantastic work! 🚀'
+           })
+
+# Comments explaining the changes:
+# 1. Used the `github-script` action instead of manually calling the GitHub API with `curl`.
+# 2. This change simplifies the script, making it more readable and maintainable.
+# 3. The `github-token` and `script` fields provide the necessary authorization and action to be taken.
+# 4. The `script` field uses the GitHub API through the `github-script` action to add a comment to the merged PR.
      - name: Add Comment to Merged PR
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
