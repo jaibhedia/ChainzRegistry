@@ -75,3 +75,17 @@ flutter run -d web-server --web-port 5555
 ## Project Flowchart
 <img src="screenshots/flowchart.png" height="450">
 
+## ❤ Thanks to all Contributors
+
+Thanks to all the contributors for helping this project grow! 🍻
+
+<a href="https://github.com/jaibhedia/ChainzRegistry/graphs/contributors">
+   
+<img src="https://contrib.rocks/image?repo=jaibhedia/ChainzRegistry " />
+</a>
+
+## 🙏 Support
+
+Don't forget to leave a star ⭐ for this project!
+
+Crafted with ♥ by @jaibhedia
