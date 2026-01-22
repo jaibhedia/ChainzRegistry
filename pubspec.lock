@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: archive
-      sha256: ae3e2b5dcfd7262920f3a36df8f04a9f798bafe395d7dc6cf2a7178ae8aba792
+      sha256: "49b1fad315e57ab0bbc15bcbb874e83116a1d78f77ebd500a4af6c9407d6b28e"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.6"
+    version: "3.3.8"
   async:
     dependency: transitive
     description:
@@ -428,10 +428,10 @@ packages:
     dependency: transitive
     description:
       name: pointycastle
-      sha256: "041b249f5c70e8983ebbaff4fdea252c2af8d4912ba64b649edb17615349afef"
+      sha256: "4be0097fcf3fd3e8449e53730c631200ebc7b88016acecab2b0da2f0149222fe"
       url: "https://pub.dev"
     source: hosted
-    version: "3.6.1"
+    version: "3.9.1"
   provider:
     dependency: "direct main"
     description:
